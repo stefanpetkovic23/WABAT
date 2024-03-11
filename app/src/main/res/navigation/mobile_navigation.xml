@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.swev2.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_bookflight"
+            app:destination="@id/nav_bookflight" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_slideshow"
+            app:destination="@id/nav_slideshow" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_about"
+            app:destination="@id/nav_about" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_card"
+            app:destination="@id/nav_card" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_check_in"
+            app:destination="@id/nav_check_in" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_userprofile"
+            app:destination="@id/nav_userprofile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_bookflight"
+        android:name="com.example.swev2.ui.bookflights.HomeBookFlightFragment"
+        android:label="@string/bookflights"
+        tools:layout="@layout/fragment_home_book_flight">
+        <action
+            android:id="@+id/action_nav_bookflight_to_flightlist"
+            app:destination="@id/flightlist" />
+        <action
+            android:id="@+id/action_nav_bookflight_to_baggageFragment"
+            app:destination="@id/baggageFragment" />
+        <action
+            android:id="@+id/action_nav_bookflight_to_flightClassFragment"
+            app:destination="@id/flightClassFragment" />
+        <action
+            android:id="@+id/action_nav_bookflight_to_searchDestinationsFragment"
+            app:destination="@id/searchDestinationsFragment" />
+        <action
+            android:id="@+id/action_nav_bookflight_to_searchDestinationsFragment2"
+            app:destination="@id/searchDestinationsFragment" />
+        <action
+            android:id="@+id/action_nav_bookflight_to_homeFlightListFragment"
+            app:destination="@id/homeFlightListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.swev2.ui.gallery.GalleryFragment"
+        android:label="@string/myflights"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.swev2.ui.slideshow.SlideshowFragment"
+        android:label="@string/findbookings"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.swev2.ui.about.AboutFragment"
+        android:label="@string/about"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/nav_card"
+        android:name="com.example.swev2.ui.boardingcard.BoardingCardFragment"
+        android:label="@string/tickets"
+        tools:layout="@layout/fragment_boarding_card" >
+        <action
+            android:id="@+id/action_nav_card_to_ticket"
+            app:destination="@id/ticket" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_check_in"
+        android:name="com.example.swev2.ui.checkin.CheckInFragment"
+        android:label="@string/checkin"
+        tools:layout="@layout/fragment_check_in" >
+        <action
+            android:id="@+id/action_nav_check_in_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_userprofile"
+        android:name="com.example.swev2.ui.userprofile.UserProfileFragment"
+        android:label="@string/user"
+        tools:layout="@layout/fragment_user_profile" />
+
+    <fragment
+        android:id="@+id/ticket"
+        android:name="com.example.swev2.ui.others.TicketFragment"
+        android:label="@string/boardpass"
+        tools:layout="@layout/fragment_ticket"/>
+
+    <fragment
+        android:id="@+id/flightlist"
+        android:name="com.example.swev2.ui.others.FlightListFragment"
+        android:label="@string/flights"
+        tools:layout="@layout/fragment_flight_list">
+        <action
+            android:id="@+id/action_flightlist_to_flightInfoFragment"
+            app:destination="@id/flightInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/baggageFragment"
+        android:name="com.example.swev2.ui.others.BaggageFragment"
+        android:label="fragment_baggage"
+        tools:layout="@layout/fragment_baggage" >
+        <action
+            android:id="@+id/action_baggageFragment_to_nav_bookflight"
+            app:destination="@id/nav_bookflight" />
+        <action
+            android:id="@+id/action_baggageFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/flightClassFragment"
+        android:name="com.example.swev2.ui.others.FlightClassFragment"
+        android:label="fragment_flight_class"
+        tools:layout="@layout/fragment_flight_class" />
+    <fragment
+        android:id="@+id/chooseSeatFragment"
+        android:name="com.example.swev2.ui.others.ChooseSeatFragment"
+        android:label="fragment_choose_seat"
+        tools:layout="@layout/fragment_choose_seat" >
+        <action
+            android:id="@+id/action_chooseSeatFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+        <action
+            android:id="@+id/action_chooseSeatFragment_to_baggageFragment"
+            app:destination="@id/baggageFragment" />
+        <action
+            android:id="@+id/action_chooseSeatFragment_to_baggageFragment2"
+            app:destination="@id/baggageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.swev2.ui.others.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+    <fragment
+        android:id="@+id/flightInfoFragment"
+        android:name="com.example.swev2.ui.others.FlightInfoFragment"
+        android:label="fragment_flight_info"
+        tools:layout="@layout/fragment_flight_info" >
+        <action
+            android:id="@+id/action_flightInfoFragment_to_chooseSeatFragment"
+            app:destination="@id/chooseSeatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchDestinationsFragment"
+        android:name="com.example.swev2.ui.others.SearchDestinationsFragment"
+        android:label="fragment_search_destinations"
+        tools:layout="@layout/fragment_search_destinations" >
+        <action
+            android:id="@+id/action_searchDestinationsFragment_to_nav_bookflight"
+            app:destination="@id/nav_bookflight" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFlightListFragment"
+        android:name="com.example.swev2.ui.others.HomeFlightListFragment"
+        android:label="fragment_home_flight_list"
+        tools:layout="@layout/fragment_home_flight_list" >
+        <action
+            android:id="@+id/action_homeFlightListFragment_to_homeFlightInfoFragment"
+            app:destination="@id/homeFlightInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFlightInfoFragment"
+        android:name="com.example.swev2.ui.others.HomeFlightInfoFragment"
+        android:label="fragment_home_flight_info"
+        tools:layout="@layout/fragment_home_flight_info" />
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.example.swev2.ui.others.PaymentFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment" >
+        <action
+            android:id="@+id/action_paymentFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+
+</navigation>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+
+    <item android:title="@string/bookings">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_home"
+                    android:icon="@drawable/baseline_home_24"
+                    android:title="@string/home"/>
+                <item
+                    android:id="@+id/nav_bookflight"
+                    android:icon="@drawable/takeoff_the_plane"
+                    android:title="@string/bookflights" />
+                <item
+                    android:id="@+id/nav_gallery"
+                    android:icon="@drawable/calendar"
+                    android:title="@string/myflights" />
+                <item
+                    android:id="@+id/nav_slideshow"
+                    android:icon="@drawable/booking"
+                    android:title="@string/findbookings" />
+                <item
+                    android:id="@+id/nav_check_in"
+                    android:icon="@drawable/smartphone"
+                    android:title="@string/checkin" />
+                <item
+                    android:id="@+id/nav_card"
+                    android:icon="@drawable/airplane_tickets"
+                    android:title="@string/tickets" />
+            </group>
+        </menu>
+    </item>
+
+
+    <item android:title="Info">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/about"
+                android:title="@string/about"/>
+        </menu>
+    </item>
+
+    <item android:title="@string/account">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_userprofile"
+                    android:icon="@drawable/user_image_with_black_background"
+                    android:title="@string/profile"/>
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/logout"
+                    android:title="@string/logout"/>
+            </group>
+        </menu>
+    </item>
+</menu>

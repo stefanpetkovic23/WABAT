@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "156257715928",
+    "firebase_url": "https://wabat-d2888-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "wabat-d2888",
+    "storage_bucket": "wabat-d2888.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156257715928:android:ee9bab7e3cee655e3d79ad",
+        "android_client_info": {
+          "package_name": "com.example.swev2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "156257715928-22mt070mlrsovpckg1d13a7qk6l3bs28.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAh6QhLpZuDInSLKGNb2x1edSdig3-suNE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "156257715928-22mt070mlrsovpckg1d13a7qk6l3bs28.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156257715928:android:63b83ef968abd9f93d79ad",
+        "android_client_info": {
+          "package_name": "com.example.wabat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "156257715928-22mt070mlrsovpckg1d13a7qk6l3bs28.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAh6QhLpZuDInSLKGNb2x1edSdig3-suNE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "156257715928-22mt070mlrsovpckg1d13a7qk6l3bs28.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
